@@ -1,0 +1,11 @@
+.v {
+    margin: 1%;
+    padding: 1%;
+    border-radius:10px;
+    box-shadow: 0px 0px 20px black;
+    background: rgb(175, 150, 255);
+}
+
+body {
+    background: rgb(125, 100, 255);
+}

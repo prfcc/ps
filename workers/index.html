@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfect - for workers</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="worker_pass">
+    <h1>Enter your worker pass</h1>
+    <input id="worker_pass_input" placeholder="worker pass" type="password">
+    <button id="worker_pass_submit" onclick="workerPassSubmit()">Submit</button>
+    <input id="save_pass_input" type="checkbox">
+    <i id="invalid_worker_pass" hidden="hidden">Invalid worker pass!</i>
+</div>
+<div id="content" hidden="hidden">
+    <div style="display: flex;" id="header">
+        <div style="margin: 1%; padding: 1%; background: rgb(200, 200, 200);"><h3>Name: </h3><h2 id="profile_name"></h2></div>
+        <div style="margin: 1%; padding: 1%; background: rgb(200, 200, 200);"><h3>Job: </h3><h2 id="profile_job"></h2></div>
+        <div style="margin: 1%; padding: 1%; background: rgb(200, 200, 200);"><h3>Id: </h3><h2 id="profile_id"></h2></div>
+        <button onclick="removeAutoLogin()">remove auto-login</button>
+        <button onclick="seeTheWorkersTasks()" id="see_workers_tasks">see your workers tasks</button>
+        <a href="?p=p">1</a>
+    </div>
+    <div id="tasks_list_div"><h2>Tasks list: </h2><h2 id="tasks_list">loading</h2></div>
+    <div id="workers_tasks_list_div" hidden="hidden">
+        <div id="createTask"><select id="createTaskWorkerSelect"></select><input type="date" id="createTaskMaxTime"><input placeholder="TaskName" id="createTaskName"><input placeholder="TaskText" id="createTaskText"><button onclick="createNewTask()">create</button></div><h2>Workers tasks list:</h2><button onclick="returnHome()">Return home</button>
+    </div>
+</div>
+<div id="parser" hidden="hidden">
+    <a href="?">home</a>
+    <input placeholder="site URL" id="p_s_u">
+    <input placeholder="attribute" id="p_a">
+    <button onclick="startParse()">Submit</button>
+    <textarea readonly="readonly" id="parse_result"></textarea>
+</div>
+</body>
+</html>
