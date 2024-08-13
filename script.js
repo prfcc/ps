@@ -13,7 +13,7 @@ function setBanners(data) {
 }
 
 window.onload = function () {
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        document.querySelector("body").innerHTML = "<h1>This site is not available on your device, sorry</h1>"
-    }
+    //if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    //    document.querySelector("body").innerHTML = "<h1>This site is not available on your device, sorry</h1>"
+    //}
 }
